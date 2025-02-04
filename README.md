@@ -1,6 +1,7 @@
 # BACKEND KULLANIM KILAVUZU
 
 ## Projeyi başlatma adımları ve bazı önemli bilgiler
+Note: source tools/ ile başlayan komutlar bash terminalinde çalışıyor, cmd'de çalışmıyor. Bashde çalıştırınız.
 
 1. Docker içine girmeliyiz bilgisayarınızda docker yoksa kurunuz. Python versiyonum 3.13.1'dir.
 2. Containerları oluşturmak için `source tools/docker-development.sh` komutunu çalıştırınız.

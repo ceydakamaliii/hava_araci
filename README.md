@@ -4,7 +4,7 @@
 
 1. Docker içine girmeliyiz bilgisayarınızda docker yoksa kurunuz. Python versiyonum 3.13.1'dir.
 2. Containerları oluşturmak için `source tools/docker-development.sh` komutunu çalıştırınız.
-3. Docker dashboarddan 2 tane container oluştuğunu doğrulayın veya `docker ps` komutu ile ayakta olan containerları görebilirsiniz.
+3. Docker dashboarddan 2 tane container oluştuğunu doğrulayın veya `docker ps` komutu ile oluşan containerların çalışıyor durumda olduğunu kontrol edin 2 cointainerda çalışır durumda olmalı ve docker ps komutu çıktısında gözükmeli. Eğer gözükmeyen varsa docker dashboarddan container'ı run edebilirsiniz.
 4. Container içine girmek için `docker exec -it aircraft bash` komutunu çalıştırabilirsiniz. Venv oluşturmak için `python -m venv venv` komutunu çalıştırınız. Venv'i aktif etmek için `source venv/bin/activate` komutunu çalıştırınız. Veya tools olarak yazmış olduğum `source tools/activate-venv.sh` komutunu çalıştırabilirsiniz.
 5. Containerlar oluşma aşamasında zaten gerekli paketler yüklenecektir. Ama ayrıyetten manuel olarakda yüklemek isterseniz container içindeyken `pip install -r requirements/base.pip` komutunu ardından `pip install -r requirements/dev.pip` komutunu ve en son `pip install -r requirements/constraints.pip` komutunu çalıştırabilirsiniz.
 6. Proje gereksinimleri yüklendiğine göre artık projemizi çalıştırabiliriz docker içindeyken `python manage.py runserver 0:8000` komutunu çalıştırın. burada sizden migrate işlemleri yapmanız istenicek. `python manage.py migrate` komutunu çalıştırınız.

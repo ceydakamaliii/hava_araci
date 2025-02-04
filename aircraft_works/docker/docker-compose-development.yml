@@ -1,0 +1,35 @@
+version: "3.8"
+services:
+  aircraft:
+    build:
+      context: ..
+      dockerfile: ./docker/Dockerfile.dev.application
+    image: aircraft
+    privileged: true
+    container_name: aircraft
+    environment:
+      - DJANGO_SETTINGS_MODULE=aircraft.settings
+      - POSTGRESQL_HOST=aircraft_postgresql
+    command: /bin/bash -c "tail -f /var/log/dpkg.log "
+    volumes:
+      - "..:/aircraft"
+      - "./data/root:/root"
+    ports:
+      - "8000:8000"
+    links:
+      - postgresql
+
+  postgresql:
+    image: postgres:17.2
+    platform: linux/x86_64
+    container_name: aircraft_postgresql
+    environment:
+      - POSTGRES_DB=aircraft
+      - POSTGRES_USER=aircraft_dbu
+      - POSTGRES_PASSWORD=aircraft_ceyda
+      - POSTGRES_ROOT_PASSWORD=aircraft_root
+    ports:
+      - "5432:5432"
+    volumes:
+      - "./data/db:/var/lib/postgresql/data/"
+      - "../tools/init.sql:/docker-entrypoint-initdb.d/1.sql"

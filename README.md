@@ -78,7 +78,7 @@ Bu proje, uçak parçalarının üretim ve montaj süreçlerini yönetmek için 
 ### Gereksinimler
 
 - Node.js (v18 veya üzeri)
-- pnpm kullanıyorum.
+- Bilgisayarınızda pnpm yüklü olmalıdır yüklü değilse pnpm'i bilgisayarınıza yükleyiniz. Bilgisayarınızda npm yüklü ise `npm install -g pnpm` ile yükleyebilirsiniz. Mac kullanıyorsanız homebrew ile yükleyebilirsiniz `brew install pnpm`. 
 
 ### Kurulum
 

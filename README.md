@@ -64,8 +64,8 @@
 20. Yazmış olduğum endpointlerin hepsi swaggerda mevcuttur.
 21. Yazmış olduğum endpointler için birim testleri yazdım.
 22. Birim testleri çalıştırmak için docker içinde olmanız gerekir.
-23. Account işlemleri yani kullanıcı işlemleri için (SignUp, Login, Logout, UserDetail...) yazmış olduğum testleri çalıştırmak isterseniz `python manage.py test aircraft.accounts.tests` komutunu terminalinizde çalıştırınız.
-24. Uçak işlemleri için (Uçak oluşturma, Uçak listeleme, Parça oluşturma, Parça listeleme, Parça silme, Parça istatistiklerini görme...) yazmış olduğum testleri çalıştırmak isterseniz `python manage.py test aircraft.plane_management.tests` komutunu çalıştırabilirsiniz.
+23. Account işlemleri yani kullanıcı işlemleri için (SignUp, Login, Logout, UserDetail...) yazmış olduğum testleri çalıştırmak isterseniz `python manage.py test aircraft.accounts.tests.SignUpTests -v 2`,`python manage.py test aircraft.accounts.tests.LoginTests -v 2`,`python manage.py test aircraft.accounts.tests.UserDetailTests -v 2`komutlarını terminalinizde çalıştırınız.
+24. Uçak işlemleri için (Uçak oluşturma, Uçak listeleme, Parça oluşturma, Parça listeleme, Parça silme, Parça istatistiklerini görme...) yazmış olduğum testleri çalıştırmak isterseniz `python manage.py test aircraft.plane_management.tests.PartViewTests -v 2`, `python manage.py test aircraft.plane_management.tests.PartScoreTests -v 2`, `python manage.py test aircraft.plane_management.tests.PlaneAssemblyTests -v 2`,`python manage.py test aircraft.plane_management.tests.PartDetailTests -v 2` komutlarını çalıştırabilirsiniz.
 
 # FRONTEND KULLANIM KILAVUZU
 

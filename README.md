@@ -155,7 +155,7 @@ Uygulama http://localhost:3000 adresinde çalışmaya başlayacaktır.
 ### Dashboard
 
 - Her takım kendi ürettiği parçaları görebilir ve yönetebilir
-- Montaj takımı tüm parçaları görüntüleyebilir ve uçaklara atayabilir
+- Montaj takımı uçak listesini görebilir ve uçak üretebilir.
 - Parça skorları ve istatistikler dashboard üzerinden takip edilebilir
 
 ### Parça İşlemleri
@@ -163,7 +163,7 @@ Uygulama http://localhost:3000 adresinde çalışmaya başlayacaktır.
 - Yeni parça oluşturma
 - Parça silme (kullanımda olmayan parçalar için)
 - Parça durumu güncelleme
-- Parça kullanım geçmişi görüntüleme
+- Parça kullanım geçmişi görüntüleme(hangi uçakta kullanıldığı)
 
 ## Güvenlik
 
